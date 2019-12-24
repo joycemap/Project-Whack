@@ -4,16 +4,15 @@ html {
     font-size: 10px;
     background-image: url(https://opengameart.org/sites/default/files/bg5.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
   
-  *, *:before, *:after {
+  /* *, *:before, *:after {
     box-sizing: inherit;
-  }
+  } */
   
   body {
-    padding: 0;
-    margin: 0;
+    margin: 5px 40px 20px 40px;
     font-family: 'Dr Kabel';
     color: antiquewhite;
   }
@@ -53,7 +52,7 @@ html {
     background-size: contain;
     content: '';
     width: 100%;
-    height:70px;
+    height:40px;
     position: absolute;
     z-index: 2;
     bottom: -30px;
