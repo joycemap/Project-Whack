@@ -14,7 +14,7 @@ var moles = document.querySelectorAll('.mole');
 var lastHole;
 var timeUp = false;
 var score = 0;
-var scoreRequirement = 3; //score requirement to move on to next level
+var scoreRequirement = 6; //score requirement to move on to next level
 var level = 1;
 var globalminTime = 400;
 var globalmaxTime = 1500;
