@@ -78,8 +78,9 @@ var globalTimeUp = 15000;
       } 
     }, time);
     
+    audioClick(); 
     audioPeep();
-    audioClick();  
+    
   }
 
   function hit(e) {
