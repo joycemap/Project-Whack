@@ -82,7 +82,7 @@ html {
 
 #start-button {
     background: rgba(255,255,255,0.2);
-    margin: 50px;
+    margin: 30px 50px 30px 100px;
     font-family: 'Dr Kabel';
     font-size: 3rem;
     color: antiquewhite;

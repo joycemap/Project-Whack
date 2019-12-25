@@ -15,10 +15,10 @@ var lastHole;
 var timeUp = false;
 var score = 0;
 var scoreRequirement = 6; //score requirement to move on to next level
-var level = 1;
+var level = 1;//starting level for the game
 var globalminTime = 400;
 var globalmaxTime = 1500;
-var globalTimeUp = 15000;
+var globalTimeUp = 12000;
 
 //Create the randomTime function to make the moles peep from the hole
   function randomTime(min, max) {
