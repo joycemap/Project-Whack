@@ -4,8 +4,8 @@
 // randomTime - time for the mole to pop up
 // randomHole - hole from which the mole will pop up from
 // hit - the function where the moles are hit, each mole scores a point of one
-// level
-// Inspired by https://javascript30.com 
+// level - players move through the levels of increasing speed and shortened game play time of 80% of the previous level. 
+// Inspired by https://javascript30.com and SEI 19's Teo Boon Hock Whack a mole project
 
 // Define the global variables; selecting all
 var holes = document.querySelectorAll('.hole');
