@@ -14,7 +14,7 @@ var moles = document.querySelectorAll('.mole');//DOM manipulation for the mole d
 var lastHole;//defining the last hole variable is to ensure that the moles don't keep popping out of the same holes 
 var timeUp = false;// global game play state is not timeUp
 var score = 0;// starting score is 0, score increment is calculated in the function 
-var scoreRequirement = 6; //score requirement to move on to next level
+var scoreRequirement = 3; //score requirement to move on to next level
 var level = 1;//starting level for the game
 var globalminTime = 400;// minimum time for "moles" to be up. 
 var globalmaxTime = 1500;// maximum time for "moles" to be up.
