@@ -91,7 +91,7 @@ var globalTimeUp = 12000;//total game play time
    
   }
 
-  moles.forEach(mole => mole.addEventListener('click', hit));
+  moles.forEach(mole => mole.addEventListener('click', hit));//forEach() method executes a provided function once for each array element
   
   
  

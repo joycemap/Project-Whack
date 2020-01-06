@@ -49,7 +49,7 @@ html {
     overflow: hidden;
     position: relative;
   }
-  /* the :after selector is used to for the contents of the "hole" which are small galaxies, visible.  */
+  /* the :after selector is used to make the contents of the "hole" which are small galaxies, visible.  */
   .hole:after {
     display: block;
     background: url(galaxy_small.jpg) bottom center no-repeat;
