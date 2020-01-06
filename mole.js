@@ -8,10 +8,10 @@
 // Inspired by https://javascript30.com and SEI 19's Teo Boon Hock Whack a mole project
 
 // Define the global variables; selecting all
-var holes = document.querySelectorAll('.hole');
-var scoreBoard = document.querySelector('.score');
-var moles = document.querySelectorAll('.mole');
-var lastHole;//defining the last hole variable is for the 
+var holes = document.querySelectorAll('.hole');//DOM manipulation for the holes
+var scoreBoard = document.querySelector('.score');//DOM manipulation for the score display
+var moles = document.querySelectorAll('.mole');//DOM manipulation for the mole display
+var lastHole;//defining the last hole variable is to ensure that the moles don't keep popping out of the same holes 
 var timeUp = false;// global game play state is not timeUp
 var score = 0;// starting score is 0, score increment is calculated in the function 
 var scoreRequirement = 6; //score requirement to move on to next level
@@ -29,7 +29,7 @@ var globalTimeUp = 12000;//total game play time
     var index = Math.floor(Math.random() * holes.length);
     var hole = holes[index];
      if (hole === lastHole) {
-       console.log('Repeated hole');// the essence of a "whack a mole" game is randomness, so the 
+       console.log('Repeated hole');// the essence of a "whack a mole" game is randomness, so if the hole is repeated, the randomfunction has to be run again.  
        return randomHole(holes);
      }
      lastHole = hole;
@@ -41,7 +41,7 @@ var globalTimeUp = 12000;//total game play time
     score = 0;
     level = 1;
     peep(globalminTime,globalmaxTime);
-    setTimeout(() => timeUp = true, globalTimeUp)
+    setTimeout(() => timeUp = true, globalTimeUp)//controls the timer for game play, passing in the global variable for the game play time
     audioClick();
   }
   function nextLevel() {
