@@ -20,7 +20,4 @@ In the JavaScript file,
     - DOM manipulation is used to control the mole movements, which holes moles pop out of and, for the updates of the score. 
     - random functions are used in the calculation of the length of  time the moles peep up and down from the holes, and the holes the moles peep from.
     - checks are made to ensure that it is an user event, in this case, defined as "clicks" are used to score (.isTrusted)
-    
-
-
-    the approach taken, installation instructions, unsolved problems, 
+    - there is no additional installation required. 
