@@ -7,9 +7,6 @@ html {
     background-size: cover;
   }
   
-  /* *, *:before, *:after {
-    box-sizing: inherit;
-  } */
   
   body {
     margin: 5px 40px 20px 40px;
@@ -52,7 +49,7 @@ html {
     overflow: hidden;
     position: relative;
   }
-  
+  /* the :after selector is used to for the contents of the "hole" which are small galaxies, visible.  */
   .hole:after {
     display: block;
     background: url(galaxy_small.jpg) bottom center no-repeat;
@@ -61,7 +58,6 @@ html {
     width: 100%;
     height:40px;
     position: absolute;
-    z-index: 2;
     bottom: -30px;
   }
   
