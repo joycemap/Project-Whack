@@ -34,6 +34,8 @@ html {
     line-height: 1;
     border-radius: 1rem;
     margin: 40px 40px 40px 40px;
+    font-family: 'Dr Kabel';
+    color: goldenrod
   }
   
   .game {
@@ -101,7 +103,7 @@ html {
     margin: 30px 50px 30px 100px;
     font-family: 'Dr Kabel';
     font-size: 3rem;
-    color: antiquewhite;
+    color: goldenrod;
   } 
 
   div.clickEffect{
