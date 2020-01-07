@@ -15,11 +15,11 @@ var moles = document.querySelectorAll('.mole');//DOM manipulation for the mole d
 var lastHole;//defining the last hole variable is to ensure that the moles don't keep popping out of the same holes 
 var timeUp = false;// global game play state is not timeUp
 var score = 0;// starting score is 0, score increment is calculated in the function 
-var scoreRequirement = 3; //score requirement to move on to next level
+var scoreRequirement = 5; //score requirement to move on to next level
 var level = 1;//starting level for the game
 var globalminTime = 1000;// minimum time for "moles" to be up. 
 var globalmaxTime = 1600;// maximum time for "moles" to be up.
-var globalTimeUp = 12000;//total game play time
+var globalTimeUp = 10000;//total game play time
 
 //Create the randomTime function to make the moles peep from the hole
   function randomTime(min, max) {
@@ -72,12 +72,11 @@ var globalTimeUp = 12000;//total game play time
       if (!timeUp) peep(minTime,maxTime); 
       else { 
         if (score >= scoreRequirement) {
-         if (confirm("Run or face more Daleks on level " + (level+1) + "?"))
+         if (confirm("Run or face more Daleks on level " + (level+1) + "? Click OK to continue, Cancel to Run!"))
           nextLevel();
           else (document.querySelector(".outcome").innerHTML= "See you another wibbly wobbly, timey wimey then!");
         }
         else (document.querySelector(".outcome").innerHTML= "Time's up! You exterminated Daleks on level " + (level) + "!");
-    
       } 
     }, time);
     

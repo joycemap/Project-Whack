@@ -4,8 +4,8 @@ It is hosted on: http://www.joyceliow.com/Project_1/mole.html
 Instructions: 
 The objective of this game is to click on as many figures that will pop up randomly from two rows of three holes each. 
 One point is granted for each figure clicked on. The score is displayed on the scoreboard.
-The game play for level 1 lasts 12 seconds. 
-If the player has a score of 3 or more in level 1, she/he moves on to the next level, where the game play time is shortened by 80% and the speed of the figures popping up is sped up by 80%.
+The game play for level 1 lasts 10 seconds. 
+If the player has a score of 5 or more in level 1, she/he moves on to the next level, where the game play time is shortened by 20% and the speed of the figures popping up is sped up by 20%.
 Players have the option of continuing to the next level or exiting the game via a confirmation window.
 Technologies used: 
 Separate HTML, CSS and vanilla JavaScript files (no jQuery) are used for the game. 
@@ -22,3 +22,7 @@ In the JavaScript file,
     - checks are made to ensure that it is an user event, in this case, defined as "clicks" are used to score (.isTrusted)
     - use of if, else statements are used 
     - there is no additional installation required. 
+
+Unsolved problems: 
+    - changing the image after being clicked upon is takes the "hole" away with it after the changed image is displayed, so this is desired feature is not implemented. 
+    - Customizing the JavaScript "confirm" box using Modal or Overlay affects the styling of the background and the "holes"
